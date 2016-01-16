@@ -38,7 +38,7 @@ Execute shell command for Development:
 
 Execute shell command for Production:
 
-	sed -i 's/deploymentGroup/Development/g' index.html
+	sed -i 's/deploymentGroup/Production/g' index.html
 
 
 ###Starting a new pipeline with the AWS CLI
