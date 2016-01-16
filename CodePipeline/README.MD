@@ -41,3 +41,14 @@ Execute shell command for Production:
 	sed -i 's/deploymentGroup/Development/g' index.html
 
 
+###Starting a new pipeline with the AWS CLI
+
+```
+#Zip the contents of the app folder
+
+zip -r bundle.zip .
+
+#Send the file to S3
+
+aws s3 mv bundle.zip s3://[YouBucketName]/bundle.zip
+```
