@@ -1,0 +1,4 @@
+#!/bin/bash
+INSTANCEID=$(curl http://169.254.169.254/latest/meta-data/instance-id)
+cd /var/www/html
+sed -i "s/instanceId/$INSTANCEID/g" index.html
