@@ -7,6 +7,9 @@ In order to go through this tutorial make sure that you already have configures 
 
 ###Creating the Repository
 ```
+aws codecommit create-repository --repository-name [YourRepoName]
+
+#Example
 aws codecommit create-repository --repository-name aws-developer-fundamentals
 ```
 
@@ -16,13 +19,15 @@ aws codecommit create-repository --repository-name aws-developer-fundamentals
 ```
 cd ~/.ssh
 ssh-keygen
-# Folow the steps to create a key
 ```
+
+Follow the steps to create a key, you need to choose a name for it and either or not use a passphrase.
 
 ###Upload SSH Key to IAM
 
 ```
 aws iam upload-ssh-public-key --user-name [IAM User name] --ssh-public-key-body "$(cat [Key name .pub])"
+
 #Example:
 aws iam upload-ssh-public-key --user-name codecommit --ssh-public-key-body "$(cat codecommit.pub)"
 ```
