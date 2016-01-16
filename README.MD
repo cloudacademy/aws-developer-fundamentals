@@ -9,6 +9,7 @@ You can find under the folders of each lecture a CheatSheet to follow the exampl
 
 Lecture | Related Docs
 ----------- | -----------
+01 - Introduction | 
 02 - CodeCommit | [CheatSheet](/CodeCommit)
 03 - CodeDeploy | [CheatSheet](/CodeDeploy) / [Sample App](/CodeDeploy/SampleApp_Linux)
 04 - CodePipeline | [CheatSheet](/CodePipeline) / [Great Scott App](/CodePipeline/Great_Scott)
